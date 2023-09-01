@@ -5,16 +5,17 @@ import Link from 'next/link';
 export default function Home() {
   return (
 
-		<div className='font-inter overflow-x-hidden smooth-scroll'>
+		<div className='font-inter overflow-x-hidden'>
 
 			<Head>
 				<title>DBA Technologies - IT Solution Provider</title>
 				<link rel='icon' href='/dba-logo.ico' />
+				<script async src="https://tally.so/widgets/embed.js"></script>
 			</Head>
 
 			<section className='flex-col h-screen'>
 
-				<nav className='flex items-center justify-between px-20 py-5'>
+				<nav className='flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-4 md:py-5'>
 
 					<div className='flex items-center justify-between'>
 
@@ -27,7 +28,7 @@ export default function Home() {
 						<Link href='#about'><span className='text-gray-500 hover:text-blue-500 text-xl cursor-pointer'>About</span></Link>
 						<Link href='#products'><span className='text-gray-500 hover:text-blue-500 text-xl cursor-pointer'>Products</span></Link>
 						<Link href='#contact'><span className='text-gray-500 hover:text-blue-500 text-xl cursor-pointer'>Contact</span></Link>
-						<Link href=''><span className='text-gray-500 hover:text-blue-500 text-xl cursor-pointer'>Blog</span></Link>
+						<Link href='/blog'><span className='text-gray-500 hover:text-blue-500 text-xl cursor-pointer'>Blog</span></Link>
 						
 					</div>
 
@@ -42,7 +43,7 @@ export default function Home() {
 						<p className='w-50 p-10 -mt-10'>DBA TECHNOLOGIES has been providing several IT Solutions to educational institutions, organisations and businesses since 20 years.</p>
 						<div className='ml-10 flex gap-10'>
 							<a href='#contact' className='px-3 py-2 w-fit font-semibold text-lg rounded-md border-2 border-cyan-500 text-cyan-500 hover:bg-sky-600 hover:text-white '>Contact Us</a>
-							<a className='px-3 py-2 w-fit font-semibold text-lg rounded-md border-2 border-cyan-500 text-cyan-500 hover:bg-sky-600 hover:text-white '>Submit Enquiry</a>
+							<a href="https://tally.so#tally-open=woexoM&tally-layout=modal&tally-width=500&tally-align-left=1&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=2000" className='px-3 py-2 w-fit font-semibold text-lg rounded-md border-2 border-cyan-500 text-cyan-500 hover:bg-sky-600 hover:text-white '>Submit Enquiry</a>
 						</div>
 
 					</div>
@@ -130,6 +131,7 @@ export default function Home() {
 
 			</section>
 
+				<div className='font-sans text-center text-white bg-black text-base leading-6 py-3 px-28'>All rights reserved. Copyright © 2023 DBA Technologies</div>
 
 		</div>
 
